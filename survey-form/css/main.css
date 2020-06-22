@@ -1,0 +1,186 @@
+::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.75;
+}
+
+:-ms-input-placeholder {
+  color: white;
+  opacity: 0.75;
+}
+
+::-ms-input-placeholder {
+  color: white;
+  opacity: 0.75;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.75;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  /*
+    background: url('https://i.postimg.cc/wv1g32Yv/bg.png') no-repeat;
+    */
+  background: url("../img/bg.png") no-repeat fixed;
+  background-size: cover;
+  width: 99vw;
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.main {
+  width: 90%;
+  max-width: 900px;
+  min-height: 500px;
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+  -webkit-box-shadow: 7px 3px 20px #53009f,  0px 0px 20px 0px #32055c;
+          box-shadow: 7px 3px 20px #53009f,  0px 0px 20px 0px #32055c;
+  color: #ffffff;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.main__header {
+  margin-top: 5rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.main__header #title {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.main__header #title .bold {
+  font-weight: bold;
+  font-size: 3.75rem;
+  display: block;
+}
+
+.main__header #description {
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+.main #survey-form .form-group {
+  margin-bottom: 1rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 0.5rem;
+  justify-items: start;
+}
+
+.main #survey-form .form-group #name-label,
+.main #survey-form .form-group #email-label,
+.main #survey-form .form-group #number-label,
+.main #survey-form .form-group p {
+  margin-left: 0.25rem;
+}
+
+.main #survey-form .form-group input[type="text"],
+.main #survey-form .form-group input[type="email"],
+.main #survey-form .form-group input[type="number"],
+.main #survey-form .form-group select,
+.main #survey-form .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  background: transparent;
+  color: white;
+  font-family: inherit;
+  border: 1px solid;
+  border-radius: 5px;
+  outline: 1px solid transparent;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.main #survey-form .form-group input[type="text"]:focus,
+.main #survey-form .form-group input[type="email"]:focus,
+.main #survey-form .form-group input[type="number"]:focus,
+.main #survey-form .form-group select:focus,
+.main #survey-form .form-group textarea:focus {
+  border-color: #EC0096;
+  outline-color: #EC0096;
+}
+
+.main #survey-form .form-group option {
+  background: #4300a09d;
+  padding: 3px;
+}
+
+.main #survey-form .form-group input[type="checkbox"],
+.main #survey-form .form-group input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.main #survey-form .form-group textarea {
+  height: 100px;
+}
+
+.main #survey-form .form-group button {
+  cursor: pointer;
+  width: 150px;
+  padding: 0.75rem 0;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  border: 0;
+  color: white;
+  background: transparent;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  border: 2px solid #3E00A0;
+}
+
+.main #survey-form .form-group button span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background: linear-gradient(50deg, #3A00A0 25%, #AF009A);
+  border-radius: 50%;
+  -webkit-transform: translate(-100%, 100%);
+          transform: translate(-100%, 100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.main #survey-form .form-group button:hover span {
+  width: 100%;
+  -webkit-transform: translate(0%, 0%) scale(2);
+          transform: translate(0%, 0%) scale(2);
+}
+
+.main #survey-form .form-group.check-rad label {
+  margin-left: 0.25rem;
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    gap: 3rem;
+  }
+  .main__header {
+    text-align: center;
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

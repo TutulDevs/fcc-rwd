@@ -1,0 +1,36 @@
+
+$black: #333333;
+$gray: #EEEEEE;
+$white: #ffffff;
+
+
+@mixin flexCenter($flex, $flow) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: $flex $flow;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    background: #3a3939;
+    color: $black;
+}
+
+.quote {
+    border-left: 3px solid $black;
+    padding: 1rem 0 1rem 1rem;
+    font-style: oblique;
+    font-weight: 300;
+}

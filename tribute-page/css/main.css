@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  background: #3a3939;
+  color: #333333;
+}
+
+.quote {
+  border-left: 3px solid #333333;
+  padding: 1rem 0 1rem 1rem;
+  font-style: oblique;
+  font-weight: 300;
+}
+
+#main {
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+  background: #EEEEEE;
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem 0.5rem;
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+  -ms-grid-columns: 1fr 8fr 1fr;
+      grid-template-columns: 1fr 8fr 1fr;
+}
+
+#main__header {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding: 1rem;
+}
+
+#main__header #title {
+  font-size: 2.5rem;
+}
+
+#main #img-div {
+  background: #ffffff;
+  grid-column: 1 / -1;
+  height: 500px;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+#main #img-div #image {
+  width: 100%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+#main #img-div #img-caption {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+#main #tribute-info {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  min-height: 300px;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  -webkit-column-width: 250px;
+          column-width: 250px;
+}
+
+#main #tribute-info__header {
+  font-size: 2rem;
+  line-height: 2;
+  -webkit-column-span: all;
+          column-span: all;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#main #tribute-info__header::after {
+  content: '';
+  width: 30%;
+  margin: 0 auto;
+  height: 1px;
+  background: #333333;
+  display: block;
+}
+
+#main #tribute-info p {
+  margin-bottom: 1rem;
+}
+
+#main blockquote.quote-big {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  font-size: 1.25rem;
+}
+
+#main blockquote.quote-big .name {
+  float: right;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-style: normal;
+}
+
+#main__footer {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  text-align: center;
+}
+
+#main__footer a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+@media screen and (max-width: 600px) {
+  #main {
+    width: 94%;
+  }
+  #main__header {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
